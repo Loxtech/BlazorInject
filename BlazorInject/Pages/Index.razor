@@ -1,0 +1,15 @@
+﻿@page "/"
+
+
+<PageTitle>Index</PageTitle>
+
+@using BlazorInject.Data;
+@inject User user
+
+<h1>Hello, @user.Name, you work with @user.Job</h1>
+
+
+@code{
+    Identity identity = new Identity();
+}
+<h1>Hello, @identity.Name, you work with @identity.Job</h1>
